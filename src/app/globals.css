@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+.custom-img {
+    background-image: url("../../public/pic/io.jpg");
+}
+
+.promoOne {
+    background-image: url("../../public/pic/era.jpg");
+}
+
+.promoTwo {
+    background-image: url("../../public/pic/tyye.webp");
+}
+ 
+/* Add this in your global CSS file, e.g., styles/globals.css */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #20b558;
+  }
+  
+  .image-container {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;  
+    object-position: top;
+    overflow: hidden;
+  }
+
+  .myDiscount {
+    transform: rotate(-90deg) translate(0, -69px);
+    transform-origin: 100% 0;
+  }
+
+  .axz {
+    border-radius: 16px;
+  }
+
+  
+ 
+ 
