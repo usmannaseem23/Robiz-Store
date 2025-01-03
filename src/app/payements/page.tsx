@@ -50,8 +50,10 @@ export default function PaymentForm() {
   };
 
   return (
-    <div>
-      <div className="text-center mt-10 mb-10">
+    <div className=" flex justify-center items-center">
+
+      <div className="bg-myBlackHead/5 p-5 rounded-xl w-full max-w-2xl shadow-lg">
+      <div className="text-center mt-10 mb-10    ">
         <h1 className="mt-10 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 text-myverydarkpink">
           <strong>Bill Payment</strong>
         </h1>
@@ -105,11 +107,11 @@ export default function PaymentForm() {
           />
 
           {/* Payment Method */}
-          <label className="block mb-2 text-sm font-medium text-myverydarkpink">
+          <label className="block mb-2 text-sm font-medium text-black">
             Payment Method
           </label>
           <select
-            className="w-full p-2 mb-4 rounded border border-myverydarkpink focus:border-myverydarkpink text-myverydarkpink"
+            className="w-full p-2 mb-4 rounded border border-myveryblack focus:border-myveryblack text-myverydarkblack"
             value={paymentMethod}
             onChange={(e) => setPaymentMethod(e.target.value)}
             required
@@ -122,12 +124,12 @@ export default function PaymentForm() {
           </select>
 
           {/* Card Number */}
-          <label className="block mb-2 text-sm font-medium text-myverydarkpink">
+          <label className="block mb-2 text-sm font-medium text-myverydarkblack">
             Card Number
           </label>
           <input
             type="text"
-            className="w-full p-2 mb-4 rounded border text-myverydarkpink border-myverydarkpink focus:border-myverydarkpink"
+            className="w-full p-2 mb-4 rounded border text-myverydarkblack border-myverydarkblack focus:border-myverydarkblack"
             placeholder="1234 5678 9012 3456"
             value={cardNumber}
             onChange={(e) => setCardNumber(e.target.value)}
@@ -135,12 +137,12 @@ export default function PaymentForm() {
           />
 
           {/* CVV */}
-          <label className="block mb-2 text-sm font-medium text-myverydarkpink">
+          <label className="block mb-2 text-sm font-medium text-myverydarkblack">
             CVV
           </label>
           <input
             type="text"
-            className="w-full p-2 mb-4 rounded border text-myverydarkpink border-myverydarkpink focus:border-myverydarkpink"
+            className="w-full p-2 mb-4 rounded border text-myverydarkblack border-myverydarkblack focus:border-myverydarkblack"
             placeholder="123"
             value={cvv}
             onChange={(e) => setCvv(e.target.value)}
@@ -152,14 +154,14 @@ export default function PaymentForm() {
             <div className="relative">
               <label
                 htmlFor="message"
-                className="leading-7 text-sm text-myverydarkpink"
+                className="leading-7 text-sm text-myverydarkblack"
               >
                 Message
               </label>
               <textarea
                 id="message"
                 name="message"
-                className="w-full rounded border border-myverydarkpink focus:border-myverydarkpink text-myverydarkpink h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="w-full rounded border border-myverydarkblack focus:border-myverydarkblack text-myverydarkblack h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 placeholder="Enter your message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -175,6 +177,7 @@ export default function PaymentForm() {
             Submit Payment
           </button>
         </form>
+      </div>
       </div>
     </div>
   );

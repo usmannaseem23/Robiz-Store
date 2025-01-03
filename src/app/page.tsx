@@ -4,7 +4,7 @@ import Services from "../../components/Services";
 import Promotion from "../../components/Promotion";
 import Categories from "../../components/Categories";
 import BestSelling from "../../components/BestSelling";
-import LimitedOfferModal from "../../components/LimitedOffer";
+
 import FeaturedProduct from "../../components/FeaturedProduct";
  
  
@@ -19,7 +19,7 @@ export default function Home() {
     <Promotion/>
     <Categories/>
     <BestSelling/>
-    <LimitedOfferModal/>
+    
   </div>
   )
 }
